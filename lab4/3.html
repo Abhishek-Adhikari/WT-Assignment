@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3</title>
+</head>
+<body>
+	Num1: <input type="text" id="num1" />
+	Num2: <input type="text" id="num2" />
+
+	<p id="result">Result:</p>
+
+	<input type="button" value="DIVIDE" onclick="divide()" /> 
+	<input type="button" value="ADD" onclick="add()" />
+	<input type="button" value="SUBTRACT" onclick="subtract()" />
+	<input type="button" value="MULTIPLY" onclick="multiply()" />	
+
+<script type="text/javascript">
+	function divide(){
+		a = document.getElementById("num1").value;
+		b = document.getElementById("num2").value;
+		document.getElementById("result").innerHTML = a / b;
+	}
+
+	function add(){
+		a = parseInt(document.getElementById("num1").value);
+		b = parseInt(document.getElementById("num2").value);
+		document.getElementById("result").innerHTML = a + b;
+	}
+
+	function subtract(){
+		a = document.getElementById("num1").value;
+		b = document.getElementById("num2").value;
+		document.getElementById("result").innerHTML = a - b;
+	}
+
+	function multiply(){
+		a = document.getElementById("num1").value;
+		b = document.getElementById("num2").value;
+		document.getElementById("result").innerHTML = a * b;	
+	}
+	
+</script>
+
+</body>
+</html>
